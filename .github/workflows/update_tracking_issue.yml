@@ -29,8 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.repository == 'scikit-learn/scikit-learn' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: '3.9'
       - name: Update tracking issue on GitHub
